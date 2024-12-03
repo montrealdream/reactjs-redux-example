@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 export const Counter = () => {
     const dispatch = useDispatch(); // khởi tạo dispatch
 
-    const count = useSelector(state => state.count);
+    const count = useSelector(state => state.counterReducer.count);
 
     // dispatch action
     const handleUp = () => {
